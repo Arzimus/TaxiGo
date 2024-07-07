@@ -77,7 +77,7 @@ function MapboxMap() {
 
   return (
     <div className="p-5">
-      <h2 className="text-[20px] font-semibold">Map</h2>
+      <h2 className="text-[30px] font-semibold  mb-2">Map</h2>
       <div className="rounded-lg ">
         {userLocation ? (
           <Map
@@ -88,7 +88,7 @@ function MapboxMap() {
               latitude: userLocation?.lat,
               zoom: 14,
             }}
-            style={{ width: "100%", height: 500, borderRadius: 10 }}
+            style={{ width: "100%", height: 550, borderRadius: 10 }}
             mapStyle="mapbox://styles/mapbox/streets-v9"
           >
             <Markers />
@@ -101,8 +101,8 @@ function MapboxMap() {
           </Map>
         ) : null}
       </div>
-      <div className="absolute bottom-[40px]
-      z-20 right-[20px]">
+      <div className="absolute bottom-[20px]
+      z-20 right-[310px]">
         <DistanceTime />
       </div>
     </div>

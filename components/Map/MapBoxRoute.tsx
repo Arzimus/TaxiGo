@@ -1,9 +1,6 @@
 
 import React from 'react'
-import Map, {
-  AttributionControl, GeolocateControl, Layer, Marker, NavigationControl,
-  Popup, Source
-} from "react-map-gl";
+import { Layer, Source } from "react-map-gl";
 function MapBoxRoute(props: any) {
 
 
