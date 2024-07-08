@@ -1,8 +1,9 @@
-
+"use client"
+import { SelectedCarAmountContext } from '@/context/SelectedCarAmountContext';
 import { PaymentElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import { error } from 'console';
-import React from 'react'
-
+import React, { useContext } from 'react'
+// const { carAmount, setCarAmount } = useContext(SelectedCarAmountContext);
 function ChechOutForm() {
   const stripe: any = useStripe();
   const elements: any = useElements();
@@ -48,7 +49,7 @@ function ChechOutForm() {
         <button
           type='submit'
           disabled={!stripe || !elements}
-          className='w-full bg-yellow-500 p-2 rounded-lg mt-2 '
+          className={`w-full p-2 rounded-lg mt-2 ${(!stripe || !elements) ? 'bg-gray-200' : ' bg-yellow-500'}`}
         >Pay</button>
       </form>
     </div>

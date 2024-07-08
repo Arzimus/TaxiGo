@@ -1,4 +1,5 @@
 'use client'
+
 import ChechOutForm from '@/components/Payment/ChechOutForm'
 import { SelectedCarAmountContext } from '@/context/SelectedCarAmountContext'
 import { Elements } from '@stripe/react-stripe-js'

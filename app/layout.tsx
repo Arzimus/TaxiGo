@@ -1,10 +1,10 @@
 
-
 import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Outfit } from 'next/font/google'
 import NavBar from '@/components/NavBar'
+// import { SelectedCarAmountContext } from '@/context/SelectedCarAmountContext'
 
 
 const outfit = Outfit({ subsets: ['latin'] })
@@ -25,7 +25,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={outfit.className}>
           <NavBar />
+          {/* <SelectedCarAmountContext.Provider value={SelectedCarAmountContext}> */}
           {children}
+          {/* </SelectedCarAmountContext.Provider> */}
         </body>
       </html>
     </ClerkProvider>
