@@ -1,5 +1,12 @@
 Live at https://taxigoo.netlify.app
 
+This project is a comprehensive ride booking application built with Next.js, React, Tailwind CSS, Mapbox API, and Stripe for payments. The app is designed to offer users a seamless experience for booking rides from one location to another, with various user-friendly features enhancing the overall process.
+
+One of the standout features of this app is its auto-suggest functionality for addresses. As users type in the source and destination fields, the app provides relevant address suggestions, making it easier to input accurate locations. Once the addresses are entered, users can select from a variety of available cars to suit their needs.
+
+To enhance the user experience, the app integrates Mapbox for displaying maps and routing information. The map not only marks the source and destination points but also shows the route between them. Additionally, it displays the distance and estimated time required to reach the destination, giving users a clear idea of their journey.
+
+Payment processing is seamlessly handled by Stripe. Upon clicking the book button, users are redirected to a secure payment page. The book button becomes active only when a car is selected and the trip amount is calculated, ensuring a smooth and error-free booking process.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
